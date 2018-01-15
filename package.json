@@ -1,0 +1,16 @@
+{
+  "name"         : "node-red-contrib-cdql",
+  "version"      : "1.0.1",
+  "description"  : "A context query langugae",
+  "dependencies": {
+    "request": "^2.74.0"
+  },
+  "keywords": [ "cql","context" ],
+  "node-red"     : {
+    "nodes": {
+      "CoaaS" : "CoaaS/CoaaS.js",
+      "contextQuery" : "contextQuery/contextQuery.js",
+      "ParkingDataMapper" : "ParkingDataMapper/ParkingDataMapper.js"
+    }
+  }
+}

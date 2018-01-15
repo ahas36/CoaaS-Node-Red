@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('ParkingDataMapper',{
+        category: 'CDQL',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:"ParkingDataMapper"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "icon.png",
+        label: function() {
+            return this.name||"ParkingDataMapper";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="ParkingDataMapper">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="ParkingDataMapper">
+    <p>Map Parking data to map objects</p>
+</script>
